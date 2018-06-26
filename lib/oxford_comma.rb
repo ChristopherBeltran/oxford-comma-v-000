@@ -1,4 +1,6 @@
-def to_sentence
+
+def oxford_comma(array)
+  def to_sentence
     default_words_connector     = ", "
     default_two_words_connector = " and "
     default_last_word_connector = ", and "
@@ -14,6 +16,5 @@ def to_sentence
         "#{self[0...-1].join(options[:words_connector])}#{options[:last_word_connector]}#{self[-1]}"
     end
   end
-def oxford_comma(array)
   array.to_sentence
 end
