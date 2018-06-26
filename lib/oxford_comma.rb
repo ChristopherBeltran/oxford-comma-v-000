@@ -14,8 +14,6 @@ def to_sentence
         "#{self[0...-1].join(options[:words_connector])}#{options[:last_word_connector]}#{self[-1]}"
     end
   end
-end
 def oxford_comma(array)
-  
-array.to_sentence
+  array.to_sentence
 end
